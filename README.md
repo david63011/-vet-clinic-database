@@ -83,8 +83,10 @@ The site was built with PSQL
 > Describe between 1-3 key features of the application.
 
 - **[key_feature_1]**
+- The table contains information about differant animals
+
 - **[key_feature_2]**
-- **[key_feature_3]**
+With the queries you can filter the data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,9 +94,8 @@ The site was built with PSQL
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> not yet 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +103,6 @@ The site was built with PSQL
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -111,10 +111,11 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 <!--
-Example command:
 
-```sh
- gem install rails
+
+```
+sudo apt-get install postgresql postgresql-contrib
+
 ```
  -->
 
@@ -127,7 +128,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:David63011/vet-clinic-database.git
 ```
 --->
 
@@ -136,11 +137,11 @@ Example commands:
 Install this project with:
 
 <!--
-Example command:
+
 
 ```sh
-  cd my-project
-  gem install
+  cd vet-clinic-database
+
 ```
 --->
 
@@ -149,10 +150,9 @@ Example command:
 To run the project, execute the following command:
 
 <!--
-Example command:
 
-```sh
-  rails server
+```
+not available
 ```
 --->
 
@@ -163,42 +163,23 @@ To run tests, run the following command:
 <!--
 Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
+```
+not available
 ```
 --->
 
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> David Underwood
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/david63011)
+- Twitter: [@twitterhandle](https://twitter.com/david630)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/david63011)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,9 +189,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **More data of the animals**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,13 +230,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **Do i need internet**
 
-  - [Answer_1]
+  - no
 
-- **[Question_2]**
+- **Do I need Node**
 
-  - [Answer_2]
+  - yes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
