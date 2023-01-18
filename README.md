@@ -110,14 +110,12 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
 
 
-```
+
 sudo apt-get install postgresql postgresql-contrib
 
-```
- -->
+
 
 ### Setup
 
@@ -126,24 +124,19 @@ Clone this repository to your desired folder:
 <!--
 Example commands:
 
-```
+
   cd my-folder
   git clone git@github.com:David63011/vet-clinic-database.git
-```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
 
-
-```
   cd vet-clinic-database
 
-```
---->
+
 
 ### Usage
 
