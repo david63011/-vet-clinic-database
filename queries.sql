@@ -8,3 +8,22 @@ SELECT name, escape_attempts from animals WHERE weight_kg>10.5;
 SELECT * from animals WHERE neutered=true;
 SELECT * from animals WHERE name!='Gabumon';
 SELECT * from animals WHERE weight_kg BETWEEN 10.4 and 17.3;
+
+BEGIN;
+UPDATE animals SET species = 'unidentified';
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
+
+BEGIN;
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+COMMIT;
+SELECT * FROM animals;
+
+
+BEGIN;
+DELETE FROM animals;
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
