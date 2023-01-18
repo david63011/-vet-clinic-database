@@ -126,7 +126,7 @@ Clone this repository to your desired folder:
 <!--
 Example commands:
 
-```sh
+```
   cd my-folder
   git clone git@github.com:David63011/vet-clinic-database.git
 ```
@@ -139,7 +139,7 @@ Install this project with:
 <!--
 
 
-```sh
+```
   cd vet-clinic-database
 
 ```
