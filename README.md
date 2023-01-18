@@ -121,8 +121,7 @@ sudo apt-get install postgresql postgresql-contrib
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+
 
 
   cd my-folder
