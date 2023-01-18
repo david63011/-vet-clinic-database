@@ -141,24 +141,18 @@ Install this project with:
 
 To run the project, execute the following command:
 
-<!--
 
-```
 not available
-```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
 
-```
+
 not available
-```
---->
+
 
 
 ## 👥 Authors <a name="authors"></a>
