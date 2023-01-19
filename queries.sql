@@ -85,3 +85,4 @@ ON animals.owner_id = owners.id
 GROUP BY owners.full_name
 ORDER BY COUNT (owners.full_name) DESC
 
+
