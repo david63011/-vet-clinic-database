@@ -78,3 +78,10 @@ INNER JOIN owners ON owner_id = owners.id
 WHERE owners.full_name = 'Dean Winchester' 
 and escape_attempts = 0;
 
+SELECT owners.full_name, COUNT (animals.name)
+FROM animals 
+INNER JOIN owners 
+ON animals.owner_id = owners.id 
+GROUP BY owners.full_name
+ORDER BY COUNT (owners.full_name) DESC
+
