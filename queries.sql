@@ -85,4 +85,58 @@ ON animals.owner_id = owners.id
 GROUP BY owners.full_name
 ORDER BY COUNT (owners.full_name) DESC
 
+SELECT vets.name, animals.name, date_of_visit
+FROM visits 
+INNER JOIN animals ON animals.id = animals_id 
+JOIN vets ON vets.id = vets_id 
+WHERE date_of_visit BETWEEN '2020-04-01' AND '2020-08-30' AND vets.name = 'Stephanie Mendez';
 
+SELECT animals.name, COUNT(date_of_visit)
+FROM visits
+INNER JOIN animals
+ON animals.id=animals_id
+GROUP BY animals.name 
+ORDER BY COUNT (animals.name) DESC
+LIMIT 1
+
+SELECT animals.name, vets.name, date_of_visit 
+FROM visits
+INNER JOIN animals
+ON animals.id=animals_id
+JOIN vets
+ON vets.id=vets_id
+WHERE vets.name= 'Maisy Smith'
+ORDER BY date_of_visit ASC
+LIMIT 1
+
+SELECT animals.name, vets.name, date_of_visit
+FROM visits
+INNER JOIN animals
+ON animals.id=animals_id
+JOIN vets
+ON vets.id= vets_id
+ORDER by date_of_visit DESC
+LIMIT 1
+
+SELECT COUNT(date_of_visit)
+FROM visits
+JOIN vets 
+ON visits.vets_id = vets.id
+LEFT JOIN specializations 
+ON specializations.vets_id = vets.id
+JOIN animals 
+ON animals.id = animals_id
+WHERE animals.species_id != specializations.species_id OR specializations.species_id IS NULL;
+
+SELECT species.name, COUNT(species.name)
+FROM visits
+JOIN vets 
+ON visits.vets_id = vets.id
+JOIN animals
+ON animals_id=animals.id
+JOIN species
+ON species_id=species.id
+WHERE vets.name='Maisy Smith'
+GROUP by species.name
+ORDER BY COUNT (species.name) DESC
+LIMIT 1
